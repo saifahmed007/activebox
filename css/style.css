@@ -1,0 +1,380 @@
+/*common start*/
+body{
+    font-family: Raleway-Regular;
+    font-weight: 400;
+    font-size: 16px;
+  
+}
+
+
+/*common end*/
+
+/*fonts*/
+@font-face{
+    src: url(../font/raleway/Raleway-Regular.ttf);
+    font-family: Raleway-Regular;
+
+}
+font-face{
+    src: url(../font/raleway/Raleway-Light.ttf);
+    font-family: Raleway-Light;
+}
+font-face{
+    src: url(../font/raleway/Raleway-SemiBold.ttf);
+    font-family: Raleway-SemiBold;
+}
+font-face{
+    src: url(../font/raleway/Raleway-BoldItalic.ttf);
+    font-family: Raleway-BoldItalic;
+}
+
+font-face{
+    src: url(../font/raleway/Raleway-Bold.ttf);
+    font-family: Raleway-Bold;
+}
+font-face{
+    src: url(../font/opensans/OpenSans-Regular.ttf);
+    font-family: OpenSans-Regular;
+}
+font-face{
+    src: url(../font/opensans/OpenSans-Bold.ttf);
+    font-family: OpenSans-Bold;
+}
+font-face{
+    src: url(../font/cardo/Cardo-Italic.ttf);
+    font-family: Cardo-Italic;
+}
+/*fonts*/
+/*header start*/
+header{
+	background-color: #30334e;
+    padding: 40px 0;
+	
+}
+.logo{}
+.menu{}
+.menu ul li a {
+    font-weight: 700;
+    font-size: 16px;
+    color: #ffffff !important;
+    padding: 0 35px !important;
+    cursor: pointer;
+}
+.menu ul li a:hover{
+	color: #e84545 !important;
+}
+.menu ul li:last-child a{
+	padding-right: 0 !important;
+}
+/*header end*/
+/*banner start*/
+.banner{
+    background-color: #30334e;
+    padding: 120px 0;
+
+}
+.b_content{
+      
+}
+.b_h1 {
+    font-family: OpenSans-Bold;
+    font-size: 68px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+.b_p {
+    margin-bottom: 40px;
+    font-size: 21px;
+    color: #ffffff;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    
+}
+.b_btn {
+    box-shadow: none;
+    height: 45px;
+    width: 230px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #e84545;
+    outline: 0;
+    transition: .4s;
+}
+.b_btn:hover {
+    box-shadow: none;
+    color: #e84545;
+    background-color: #ffffff;
+    outline: 0;
+}
+.b_img{
+
+}
+.b_img img{
+    width: 100%;
+    height: 400px;
+}
+
+/*banner end*/
+/*about start*/
+.about{
+    background-color: #f8d7da;
+}
+.p_text{
+    margin: 60px 0;
+}
+a_h2{
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    font-family: Raleway-Bold;
+    font-weight: 700;
+    font-size: 30px;
+
+}
+.a_h4{
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    font-family: OpenSans-Bold;
+    font-weight: 700;
+    font-size: 20px;
+}
+.a_p{
+    margin: 0;
+    font-size: 17px;
+    letter-spacing: 2px; 
+}
+/*about end*/
+/*project start*/
+.project{
+    padding: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8d7da;
+}
+.m_tb{
+    --bs-gutter-x: 0.1rem;
+    --bs-gutter-y: 0.1rem;
+}
+.p-content{
+    position: relative;
+    width: 360px;
+    height: 360px;
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite;
+
+
+}
+
+@keyframes animate {
+    0%
+    {
+     transform: perspective(1000px) rotateY(0deg);
+    }    
+    100%
+    {
+     transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.p-content span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+
+}
+.p-content span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;-
+    transform-style: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+    -webkit-box-reflect: below 0px linear-gradiant(transparent,transparent,#0004);
+
+}
+
+.c_p {
+    margin: 0;
+    font-size: 15px;
+    color: #6c7279;
+    line-height: 1.5;
+}
+
+/*feature end*/
+
+/*product start*/
+
+.product{
+    padding: 100px 0;
+}
+.product_r{
+     text-align: center;
+     margin: 10px 0 10px 0;
+}
+
+.t_img{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    }
+.t_img img {
+    width: 100%;
+    align-items: center;
+}
+.t_text{}
+.t_h3 {
+    margin: 40px 0 5px;
+    font-weight: 400;
+    font-size: 25px;
+    color: #2d3033;
+}
+.t_h4 {
+    margin: 0 0 15px;
+    font-weight: 400;
+    font-size: 25px;
+    color: #e84545;
+
+}
+.t-icon{
+    margin: 30px 0 0;
+}
+.t-icon ul {
+    margin-bottom: 0;
+}
+.t-icon ul li{}
+.t-icon ul li i {
+    font-size: 25px;
+    color: #c6cacc;
+    border: 2px solid #fff;
+    width: 50px;
+    height: 50px;
+    background: #ffffff;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+    transition: .4s;
+}
+.t-icon ul li i:hover{
+    color: #ffffff;
+    background-color: #6c7279;
+}
+
+/*product end*/
+/*clients start*/
+.clients{
+    background-color: #53354a;
+}
+.clients-ci {
+    bottom: 10%;
+    left: 50%;
+}
+.clients-ci [data-bs-target] {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.clients_text{
+    position: relative;
+         top: 10%;
+}
+.ct_h1{
+    font-family: Cardo-Italic;
+    font-weight: 300;
+    font-size: 36px;
+    color: #ffffff;
+}
+.ct_h4 {
+    margin: 0;
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+
+
+
+/*clients end*/
+
+
+/*contact start*/
+.contact{
+    background-color: #3a3e64;
+    padding: 65px 0 100px;
+}
+.c_text{
+    color: #6c7279;
+    font-family: Cardo-Italic;
+
+
+}
+.c-form{
+    width: 100%;
+    height: 30px;
+}
+.c-pass{
+  width: 100%;
+  height: 30px;  
+}
+
+.f_h3 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #ffffff;
+}
+.c_content{}
+.c_icon{
+        margin-bottom: 0;
+}
+.c_icon li{}
+.c_icon li i {
+    margin: 15px 0;
+    font-size: 20px;
+    color: #c6cacc;
+    border: 2px solid #6c7279;
+    width: 30px;
+    height: 30px;
+    background: #3a3e64;
+    text-align: center;
+    line-height: 29px;
+    cursor: pointer;
+    transition: .4s;
+}
+.c_icon li i:hover{
+        color: #6c7279;
+    background-color: #ffffff;
+}
+.c_location{}
+
+
+
+/*contact end*/
+/*footer start*/
+.footer{
+    padding: 30px 0;
+    background-color: #313454;
+}
+.f_text{}
+.f_text p{
+    font-family: OpenSans-Regular;
+    font-weight: 400; 
+}
+.f_text span{
+    color: #ffffff;
+}
+/*footer end*/
